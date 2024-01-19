@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: rgb(36, 35, 35);
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form input {
+            background-color: rgb(36, 35, 35);
+            border: none;
+            border-bottom: 2px solid rgb(143, 141, 141);
+            outline: none;
+            margin: 32px 3px;
+            width: 22%;
+            padding: 10px 0px;
+
+        }
+
+        label {
+            color: rgb(193, 193, 196);
+            font-size: 18px;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .extra {
+            padding: 20px 0px;
+        }
+
+        form input:focus {
+            border-bottom: 2px solid rgb(4, 42, 255);
+        }
+
+        button {
+            text-align: center;
+            padding: 10px 20px;
+            margin-left: 12px;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: rgb(4, 155, 255);
+            color: white;
+            transition: all 0.6s ease;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="user-name">Name :<input type="text" id="user-name"></label> <br>
+        <label for="user-email">E-mail :<input type="email" p id="user-email"></label> <br>
+        <label for="user-number">Number :<input type="text" id="user-number"></label> <br>
+        <label for="user-password">Password :<input type="text" id="user-password"></label> <br>
+        <label for="user-mess">Message :<input type="text" id="user-mess" class="extra"></label> <br>
+        <button>Submit</button>
+        <button>Cancel</button>
+    </form>
+
+</body>
+
+</html>
